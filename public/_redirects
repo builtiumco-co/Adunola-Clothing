@@ -1,0 +1,2 @@
+# SPA fallback for hosts that support Netlify-style redirects.
+/* /index.html 200
