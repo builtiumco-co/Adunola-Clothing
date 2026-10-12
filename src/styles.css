@@ -459,3 +459,139 @@ input[type='date'] { min-width: 0; appearance: none; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+/* Owner-confirmed brand pages and the custom ordering workflow. */
+.desktop-nav { gap: 23px; margin-left: 0; }
+.desktop-nav a { font-size: 12px; white-space: nowrap; }
+.brand-page-intro { max-width: 800px; margin-bottom: 60px; }
+.brand-page-intro h1 { font-size: clamp(54px, 6.2vw, 86px); }
+.brand-page-intro > p:last-child { max-width: 620px; margin-top: 25px; }
+.brand-story { background: #ede5df; padding-block: 76px; }
+.brand-story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; align-items: center; }
+.brand-story-grid > div > p:not(.eyebrow) + p { margin-top: 17px; }
+.brand-story-grid .text-link { margin-top: 25px; }
+.service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 25px; }
+.service-card { border-top: 1px solid var(--line); padding: 27px 0 21px; display: flex; align-items: flex-start; flex-direction: column; }
+.service-number { font: italic 35px/1 var(--serif); color: #957080; margin-bottom: 24px; }
+.service-card h3 { font-size: 32px; line-height: 1.15; margin-bottom: 17px; }
+.service-card p { font-size: 13px; padding-right: 22px; margin-bottom: 25px; }
+.service-card .text-link { margin-top: auto; font-size: 11px; }
+.section-link { margin-top: 35px; }
+.order-essentials { background: #eee8e1; padding-block: 76px; }
+.essentials-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 45px; }
+.essentials-grid svg { color: var(--plum); margin-bottom: 23px; }
+.essentials-grid h3 { font-size: 32px; margin-bottom: 17px; line-height: 1.12; }
+.essentials-grid p { font-size: 13px; }
+.about-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 80px; align-items: center; }
+.brand-signature { min-height: 430px; background: var(--plum); color: var(--cream); display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 28px; padding: 35px; }
+.brand-signature > span { font: 74px/1 Georgia, serif; letter-spacing: -.065em; }
+.brand-signature p { color: var(--cream); font-family: var(--serif); font-style: italic; font-size: 28px; }
+.brand-signature small { color: #dec9d2; font-size: 8px; letter-spacing: .2em; }
+.prose > h2 { font-size: 47px; line-height: 1.05; margin-bottom: 25px; }
+.prose > p { margin-block: 19px; }
+.prose .text-link { margin-top: 16px; }
+.brand-closing { text-align: center; padding-block: 84px; }
+.brand-closing > p { max-width: 520px; margin: 25px auto 28px; }
+.brand-services-intro { padding-top: 76px; }
+.brand-services-intro .brand-page-intro { margin-bottom: 27px; }
+.contact-layout { display: grid; grid-template-columns: 1.1fr .9fr; gap: 80px; }
+.contact-card { display: flex; gap: 24px; padding-block: 30px; border-top: 1px solid var(--line); }
+.contact-card > svg { color: var(--plum); flex-shrink: 0; width: 23px; margin-top: 5px; }
+.contact-card h2 { font-size: 33px; line-height: 1.1; margin-bottom: 10px; }
+.contact-card p { overflow-wrap: anywhere; }
+.contact-card span { display: inline-flex; align-items: center; gap: 12px; font-size: 11px; color: var(--plum); margin-top: 12px; }
+a.contact-card:hover h2 { color: #83576b; }
+.contact-aside { background: #ede5df; padding: 38px; }
+.contact-aside > p:not(.eyebrow) { margin: 23px 0; }
+.contact-aside .button { font-size: 11px; }
+.social-links { display: flex; flex-direction: column; gap: 20px; margin-top: 31px; }
+.social-links a { color: var(--plum); display: flex; gap: 10px; align-items: center; font-size: 11px; }
+.social-links a:hover { text-decoration: underline; }
+.delivery-note { margin-top: 44px; border-block: 1px solid var(--line); padding-block: 27px; display: flex; align-items: center; gap: 24px; }
+.delivery-note > svg { color: var(--plum); flex-shrink: 0; }
+.delivery-note p { font-size: 12px; flex: 1; }
+.delivery-note strong { color: var(--plum); }
+.delivery-note .text-link { white-space: nowrap; }
+.policy-index { display: flex; flex-wrap: wrap; gap: 12px; padding-bottom: 38px; }
+.policy-index a { padding: 10px 14px; border: 1px solid var(--line); font-size: 11px; color: var(--plum); }
+.policy-index a:hover { background: #ede5df; }
+.policy-layout { display: grid; grid-template-columns: .75fr 1.25fr; gap: 90px; }
+.policy-layout aside { align-self: start; position: sticky; top: 137px; padding-top: 30px; }
+.policy-layout aside h2 { font-size: 43px; }
+.policy-layout aside p:not(.eyebrow) { margin: 25px 0; font-size: 13px; }
+.policy-sections > section { border-top: 1px solid var(--line); padding-block: 30px; scroll-margin-top: 0; }
+.policy-sections h2 { font-size: 34px; letter-spacing: -.02em; margin-bottom: 20px; line-height: 1.1; }
+.policy-sections p { font-size: 13px; }
+.privacy-prose { max-width: 800px; }
+.privacy-prose > h2 { border-top: 1px solid var(--line); padding-top: 29px; margin-top: 35px; font-size: 36px; }
+.privacy-prose a { text-decoration: underline; overflow-wrap: anywhere; }
+.collection-pending { text-align: center; padding-block: 85px; }
+.collection-pending > svg { color: #957080; margin-bottom: 30px; }
+.collection-pending .brand-page-intro { margin-inline: auto; margin-bottom: 35px; }
+.collection-pending .brand-page-intro > p:last-child { margin-inline: auto; }
+.collection-pending > .text-link { display: flex; width: fit-content; margin: 24px auto 0; }
+.enquiry-order-note { margin-bottom: 25px; padding: 22px; background: #ede5df; color: var(--plum); }
+.enquiry-order-note strong { font-size: 12px; font-weight: 500; }
+.enquiry-order-note p { font-size: 11px; margin-top: 8px; }
+.enquiry-order-note a { display: inline-flex; align-items: center; gap: 8px; text-decoration: underline; font-size: 10px; margin-top: 12px; }
+.draft-actions { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-top: 20px; font-size: 10px; color: var(--plum); }
+.draft-actions button { padding: 6px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; font-size: 10px; }
+.draft-actions a { text-decoration: underline; }
+.footer-email { display: block; margin-top: 20px; font-size: 11px; color: var(--plum); overflow-wrap: anywhere; }
+.footer-socials { display: flex; gap: 20px; font-size: 10px; color: var(--plum); margin-top: 20px; }
+.footer-socials a:hover, .footer-email:hover { text-decoration: underline; }
+@media (max-width: 1000px) {
+  .header-inner { gap: 20px; }
+  .desktop-nav { gap: 17px; }
+  .desktop-nav a { font-size: 11px; }
+  .header-cta { padding-inline: 16px; }
+  .brand-story-grid, .about-layout, .contact-layout, .policy-layout { gap: 40px; }
+  .service-grid { gap: 25px; }
+  .service-card h3, .essentials-grid h3 { font-size: 28px; }
+  .contact-aside { padding: 28px; }
+}
+@media (max-width: 800px) and (min-width: 701px) {
+  .desktop-nav, .header-cta { display: none; }
+  .menu-button { display: inline-flex; }
+}
+@media (max-width: 700px) {
+  .brand-page-intro { margin-bottom: 37px; }
+  .brand-page-intro h1 { font-size: 53px; }
+  .brand-page-intro > p:last-child { font-size: 12px; margin-top: 22px; }
+  .brand-story, .order-essentials { padding-block: 50px; }
+  .brand-story-grid, .about-layout, .contact-layout, .policy-layout { grid-template-columns: 1fr; gap: 29px; }
+  .brand-story-grid p:not(.eyebrow) { font-size: 12px; }
+  .service-grid { grid-template-columns: 1fr; gap: 17px; }
+  .service-card { padding-block: 23px 15px; }
+  .service-number { margin-bottom: 20px; }
+  .service-card h3 { font-size: 33px; }
+  .service-card p { font-size: 12px; padding: 0; margin-bottom: 19px; }
+  .essentials-grid { grid-template-columns: 1fr; gap: 35px; }
+  .essentials-grid svg { margin-bottom: 16px; }
+  .essentials-grid h3 { font-size: 33px; margin-bottom: 14px; }
+  .essentials-grid p { font-size: 12px; }
+  .brand-signature { min-height: 320px; }
+  .brand-signature > span { font-size: 65px; }
+  .prose > h2 { font-size: 43px; }
+  .prose > p { font-size: 12px; }
+  .brand-closing { padding-block: 58px; }
+  .brand-closing > p { font-size: 12px; }
+  .brand-services-intro { padding-top: 48px; }
+  .contact-card { gap: 19px; padding-block: 24px; }
+  .contact-card p { font-size: 12px; }
+  .contact-card span { font-size: 10px; }
+  .contact-aside { padding: 28px; }
+  .delivery-note { margin-top: 33px; flex-wrap: wrap; gap: 16px; }
+  .delivery-note p { min-width: 220px; font-size: 11px; }
+  .delivery-note .text-link { margin-left: 39px; }
+  .policy-index { gap: 8px; padding-bottom: 20px; }
+  .policy-index a { font-size: 10px; padding: 8px 11px; }
+  .policy-layout aside { position: static; padding-top: 10px; }
+  .policy-layout aside p:not(.eyebrow) { font-size: 12px; margin-block: 20px; }
+  .policy-sections h2 { font-size: 31px; }
+  .policy-sections p { font-size: 12px; }
+  .privacy-prose > h2 { font-size: 32px; }
+  .collection-pending { padding-block: 55px; }
+  .collection-pending .brand-page-intro h1 { font-size: 46px; }
+  .footer-email { font-size: 10px; }
+}

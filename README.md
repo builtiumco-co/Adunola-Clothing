@@ -1,4 +1,4 @@
-# Adunola Clothings
+# Adunola Clothing
 
 A responsive fashion website built with React, TypeScript, and Vite. The design follows the supplied Adunola references: warm cream, deep plum, editorial serif typography, outfit inspiration, a personal design process, and a conversation-first enquiry flow.
 
@@ -24,28 +24,33 @@ The production build is in `dist/`. The preview server listens on port 4173.
 
 ## Pages and behaviour
 
-- `/`: home, outfit carousel, featured looks, the design approach, process, FAQs, and enquiry invitation.
-- `/our-work`: all four concepts with Occasion and Everyday filters.
-- `/our-work/:slug`: outfit inspiration, colour story, details, and a selected-look enquiry link.
-- `/the-experience`: the four-step personal design process and FAQs.
-- `/enquire`: a validated enquiry form with an optional inspiration look. The draft is stored only in the current browser tab's session storage.
+- `/`: the brand message, services, custom-ordering process, deposit and delivery information, FAQs, and enquiry invitation.
+- `/about`: the owner-confirmed brand story, motto, craftsmanship, affordability, and personal approach.
+- `/services`: custom dresses and gowns, two-piece outfits, trousers and tops, casual/formal wear, corporate outfits, native/traditional wear, and sewing with customer-supplied fabric.
+- `/the-experience`: custom ordering, quotes, measurements, payment, production, fittings, and collection/delivery.
+- `/contact`: business WhatsApp, email, Akure location, Instagram, and a TikTok search link.
+- `/policies`: confirmed order information, a distinction between custom and ready-to-wear returns, and a request to agree on unspecified terms before committing.
+- `/privacy`: how the form, browser-tab draft, external contact links, and customer photograph permissions work.
+- `/enquire`: validated custom enquiry including service, occasion, fabric preference, budget, collection/delivery, and delivery location. Drafts stay in the current browser tab’s session storage and can be cleared.
+- `/our-work`, `/our-work/:slug`, `/shop`: coming-soon notices only. Original portfolio and product photos, stock, prices, cart, and checkout are deliberately on hold at the user's request.
 
-The form opens WhatsApp with a prepared message addressed to **+234 916 674 2722**. The visitor must send that message in WhatsApp. The website does not independently send messages or store enquiries on a server. To change the public destination number, copy `.env.example` to `.env.local`, edit `VITE_WHATSAPP_NUMBER`, and rebuild.
+The business WhatsApp destination is **09032022101 / +234 903 202 2101**, and email is **olawalebunmi05@gmail.com**. The enquiry form prepares a message; the visitor sends it in WhatsApp. There is no server-side enquiry database or automatic sending. Set the public `VITE_WHATSAPP_NUMBER` build-time override only if the owner changes the destination number.
 
-Fonts and icons are served locally. There is no account, payment, analytics, or third-party image dependency.
+Confirmed ordering facts: a 70% bank-transfer deposit before production; the remaining 30% according to agreed terms; approximately 3–5 working days for straightforward orders, subject to design and workload; urgent orders according to availability; measurement guidance and fittings where needed; collection in Akure and local/nationwide delivery with fees agreed by location and service.
 
-## Outfit photographs
+## Content still awaiting the owner
 
-The business selected and supplied all four photographs in `Shop.zip`. The original JPEG files are retained unchanged, including existing attribution. Generated and externally sourced alternatives are not included.
+- Original photographs of Adunola garments, customer orders, creative process, and ready-to-wear products; product prices, sizes, inventory, and purchase terms before enabling the shop.
+- Exact cancellation deadlines, deposit refund conditions, separate custom/ready-to-wear return rules, and the fitting-adjustment period. The site asks customers to confirm these directly before paying; it does not invent non-refundable deposits or a return window.
+- The exact TikTok profile URL. The supplied name is “adunola clothing,” which contains a space and is not a usable handle. The current link is explicitly a TikTok search, not a guessed profile.
+- Permission-backed customer reviews and photographs. No testimonials, ratings, store street address, or opening hours have been invented.
+- Bank account details are obtained directly from the business after discussing an order; the site does not collect payment or publish an invented account.
 
-| Path | Photograph |
-| --- | --- |
-| `public/images/scarlet-bloom.jpg` | `Shop/download (3).jpg` — scarlet and gold leaf-print mini dress with bell sleeves |
-| `public/images/golden-rhythm.jpg` | `Shop/download (2).jpg` — gold and olive patterned two-piece with a matching headwrap |
-| `public/images/emerald-statement.jpg` | `Shop/download (4).jpg` — green geometric-print top and white trousers on a mannequin |
-| `public/images/terracotta-muse.jpg` | `Shop/download (1).jpg` — rust and blue patterned, belted shirt dress |
+## Existing inspiration photographs
 
-Retain the original photographs and their existing attribution. The gallery presents these as inspiration concepts rather than claiming they are previously commissioned Adunola garments. Update outfit copy in `src/content.ts` when actual product details are confirmed.
+The photographs previously supplied in `Shop.zip` are retained unchanged under `public/images/`. The home page uses only `scarlet-bloom.jpg`, explicitly labelled **Style inspiration**. These photos are not presented as an original Adunola portfolio or purchasable stock. The other files and legacy concept content remain available for reference without active galleries or product pages.
+
+Fonts and icons are served locally. There are no analytics trackers, advertising cookies, or external image requests.
 
 ## Browser tests
 
@@ -57,7 +62,7 @@ npm test
 
 When `/usr/bin/chromium` is available, tests use it automatically; a separate browser download is unnecessary. An alternative system browser can be selected with `PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH`. Otherwise Playwright uses its installed Chromium.
 
-The test suite covers desktop and mobile navigation, carousel controls, photo loading, gallery filtering, look selection, form validation, WhatsApp recipient and message contents, draft restoration, FAQ accordions, fallback routes, viewport overflow, and automated WCAG accessibility checks. Tests verify the enquiry URL without contacting WhatsApp or sending a message.
+The test suite covers desktop and mobile navigation, home inspiration image loading, the portfolio/shop hold, service selection, form validation, the owner-confirmed WhatsApp recipient and full enquiry message, draft restoration and clearing, contact links, delivery anchors, FAQ accordions, fallback routes, viewport overflow, and automated WCAG accessibility checks. Tests verify the enquiry URL without contacting WhatsApp or sending a message.
 
 ## Static hosting
 
